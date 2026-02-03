@@ -1,0 +1,250 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMUOBqxrdJyctILKYblK8pV",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/oxn102/BTE320-Om/blob/main/email%20stuff\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 425,
+      "metadata": {
+        "id": "dZCsPMNAukRm"
+      },
+      "outputs": [],
+      "source": [
+        "email = \"!! Click on the link: www.phis.org and receive a reward!\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "has_urgent = \"URGENT\""
+      ],
+      "metadata": {
+        "id": "ouSSfYvnw2R3"
+      },
+      "execution_count": 426,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "has_link = \"www.\""
+      ],
+      "metadata": {
+        "id": "eQRgIhwExFrz"
+      },
+      "execution_count": 427,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if has_urgent in email:\n",
+        "    print(\"Phising!\")"
+      ],
+      "metadata": {
+        "id": "_Oa0vSzexNgk"
+      },
+      "execution_count": 428,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if has_link in email:\n",
+        "    print(\"Spam!\")\n",
+        "else:\n",
+        "    print(\"legit!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jld0CtMSy_Rc",
+        "outputId": "6291a328-6412-49d5-9e53-7399183ccfad"
+      },
+      "execution_count": 429,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Spam!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "grade= int(input(\"Enter a grade (0-100):\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WQwroDrn0E7l",
+        "outputId": "a18ccf7f-1a3a-48ac-a77b-9b4f21b6cd2f"
+      },
+      "execution_count": 430,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a grade (0-100):97\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if grade >= 97:\n",
+        "  print(\"A+\")\n",
+        "elif grade >= 93:\n",
+        "  print(\"A\")\n",
+        "elif grade >= 90:\n",
+        "  print(\"A-\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cJf3tkcc0OYr",
+        "outputId": "a0d29302-517d-40b5-f5fd-c14e21a38be9"
+      },
+      "execution_count": 431,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A+\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cond1 = True # Example definition\n",
+        "cond2 = False # Example definition\n",
+        "\n",
+        "if cond1:\n",
+        "  if cond2:\n",
+        "    print(\"Both conditions are true\")\n",
+        "  else:\n",
+        "    print(\"Only cond1 is true\")\n",
+        "else:\n",
+        "  print(\"Cond1 is false\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tFNg3f_92Gsn",
+        "outputId": "517c5c0d-0a8f-4d2e-fbe1-a4c57a46f03b"
+      },
+      "execution_count": 432,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Only cond1 is true\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "email = \"!! Click on the link: www.phis.org and receive a reward!\"\n",
+        "has_urgent = \"URGENT\"\n",
+        "has_link = \"www.\"\n",
+        "\n",
+        "if has_urgent in email:\n",
+        "  if has_link in email:\n",
+        "    print(\"Phishing!\")\n",
+        "  else:\n",
+        "    print(\"Spam!\")\n",
+        "else:\n",
+        "  print(\"Legit!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qEj03yui2SxN",
+        "outputId": "b39de49c-ffd4-48ab-d5b4-14ce415d82b7"
+      },
+      "execution_count": 433,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Legit!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "email = \"URGENT!! Click on the link: www.phis.org and receive a reward!\"\n",
+        "has_urgent = \"URGENT\"\n",
+        "has_link = \"www.\"\n",
+        "\n",
+        "if has_urgent in email and has_link in email:\n",
+        "  print(\"Phishing!\")\n",
+        "elif has_urgent in email and not has_link in email:\n",
+        "  print(\"Spam!\")\n",
+        "elif not has_urgent in email and not has_link in email:\n",
+        "  print(\"Legit!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CPWHSD3s5hWm",
+        "outputId": "e50febed-236d-4db3-b60e-6f87d03b82fc"
+      },
+      "execution_count": 434,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Phishing!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
